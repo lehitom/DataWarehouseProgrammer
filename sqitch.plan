@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=hcp_interview
+
+01_initial_schema 2022-01-20T21:31:40Z Debian <admin@ip-172-26-11-80> # Initial table schema for The Office show lines data source table.
+02_import_raw_data [01_initial_schema] 2022-01-20T21:49:46Z Debian <admin@ip-172-26-11-80> # Import raw data for the_office_dialog table.
