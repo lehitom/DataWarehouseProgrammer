@@ -13,8 +13,12 @@ Your first task is to create new database tables using deployment scripts for yo
 We want you to create tables that can provide pre-computed data and answer for the following questions:
 
 - For all data, What are the names of the characters? How many characters are there?
+SELECT * FROM the_office_speakers;
+SELECT count(*) FROM the_office_speakers;
 - For each season, which character has the most lines?
+SELECT DISTINCT ON (season) season, speaker, lines FROM the_office_count;
 - For each season, what is the number of times a "That's what she said" joke comes up?
+SELECT * FROM the_office_twss ORDER BY season asc;
 - For each season, what is the average percent of lines each character contributed per episode?
 - For each character, what is the average number of words per line?
 - For each character, what is the most common word?

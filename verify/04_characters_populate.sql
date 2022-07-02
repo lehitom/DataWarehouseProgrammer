@@ -13,7 +13,7 @@ BEGIN
     ASSERT row_count=793, 'FAILED: the_office_speakers table did not have 59909 inserted rows.';
 
     /* Spot check a record and verify it has the correct values. */
-    SELECT * INTO test_row_1 FROM the_office_speakers WHERE id = 430;
+    SELECT * INTO test_row_1 FROM the_office_speakers WHERE id = 485;
     ASSERT test_row_1.speaker = 'Mikela', 'FAILED: ASSERT test_row_1.speaker';
 END
 $$;

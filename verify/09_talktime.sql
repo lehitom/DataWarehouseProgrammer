@@ -2,11 +2,18 @@
 
 BEGIN;
 
-/* Verify the table was successfully created */
+/* Verify the tables were successfully created */
 SELECT 
     id,
     season,
-    office_character,
-    percent
+    episode,
+    episode_lines
+FROM the_office_episode_lines LIMIT 1;
+
+SELECT 
+    id,
+    season,
+    speaker,
+    season_average
 FROM the_office_talktime LIMIT 1;
 ROLLBACK;

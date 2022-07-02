@@ -2,5 +2,7 @@
 
 BEGIN;
 
+DROP TABLE the_office_episode_lines;
 DROP TABLE the_office_talktime;
+
 COMMIT;
