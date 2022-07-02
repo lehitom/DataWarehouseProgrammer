@@ -2,6 +2,10 @@
 
 BEGIN;
 
-INSERT INTO the_office_speakers (speaker) select distinct speaker from the_office_dialog order by speaker asc;
+INSERT INTO the_office_speakers (speaker) 
+SELECT DISTINCT speaker 
+FROM the_office_dialog 
+WHERE deleted = false
+ORDER BY speaker ASC;
 
 COMMIT;
