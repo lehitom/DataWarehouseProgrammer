@@ -5,7 +5,7 @@ BEGIN;
 /* Verify the table was successfully created */
 SELECT 
     id,
-    office_character,
+    speaker,
     wpl
 FROM the_office_wpl LIMIT 1;
 
