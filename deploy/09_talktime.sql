@@ -2,6 +2,8 @@
 
 BEGIN;
 
+-- Creates lines per episode table.
+
 CREATE TABLE the_office_episode_lines (
 	id SERIAL NOT NULL,
     season INTEGER NOT NULL,
@@ -16,6 +18,7 @@ COMMENT ON COLUMN the_office_episode_lines.season IS 'Season from which the line
 COMMENT ON COLUMN the_office_episode_lines.episode IS 'Episode that the line count is for';
 COMMENT ON COLUMN the_office_episode_lines.episode_lines IS 'Episode total of lines';
 
+-- Creates average of percentage lines per speaker per episode within season
 
 CREATE TABLE the_office_talktime (
 	id SERIAL NOT NULL,
@@ -30,4 +33,5 @@ COMMENT ON COLUMN the_office_talktime.id IS 'Unique identifier (surrogate key) o
 COMMENT ON COLUMN the_office_talktime.season IS 'Season from which the percentages are from';
 COMMENT ON COLUMN the_office_talktime.speaker IS 'Name of character in the office';
 COMMENT ON COLUMN the_office_talktime.season_average IS 'Avereage percentage of lines per person per season';
+
 COMMIT;

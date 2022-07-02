@@ -2,7 +2,7 @@
 
 BEGIN;
 
--- Creating silent character table.
+-- Creates silent character table.
 CREATE TABLE the_office_silent (
 	id SERIAL NOT NULL,
 	speaker TEXT NOT NULL,

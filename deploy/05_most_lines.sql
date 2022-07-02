@@ -2,7 +2,7 @@
 
 BEGIN;
 
--- Creating line count per character per season table.
+-- Creates line count per character per season table.
 CREATE TABLE the_office_count (
 	id SERIAL NOT NULL,
 	speaker TEXT NOT NULL,

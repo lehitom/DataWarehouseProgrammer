@@ -2,7 +2,7 @@
 
 BEGIN;
 
--- Creating unique charater table.
+-- Creates unique character table.
 CREATE TABLE the_office_speakers (
 	id SERIAL NOT NULL,
 	speaker TEXT NOT NULL,

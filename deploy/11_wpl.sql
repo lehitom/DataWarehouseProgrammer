@@ -2,8 +2,7 @@
 
 BEGIN;
 
-
--- Creating line count per character per season table.
+-- Creates word count per line per speaker table.
 CREATE TABLE the_office_wpl (
 	id SERIAL NOT NULL,
 	speaker TEXT NOT NULL,

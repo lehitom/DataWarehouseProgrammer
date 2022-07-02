@@ -1,7 +1,10 @@
 -- Deploy hcp_interview:10_talktime_populate to pg
+-- requires: 02_import_raw_data
+-- requires: 09_talktime
 
 BEGIN;
 
+--Counts how many lines are per person, and then combines for per episode
 INSERT INTO the_office_episode_lines(season, episode, episode_lines)
 SELECT DISTINCT season, episode, SUM(lines) as episode_lines
 FROM (
@@ -13,6 +16,8 @@ ORDER BY season, episode, lines DESC
 GROUP BY season, episode
 ORDER BY season, episode, episode_lines;
 
+--Pulls previous table to have reference for how many lines are in the episode and then makes percentage per episode
+--Then averages the results
 INSERT INTO the_office_talktime(season, speaker, season_average)
 SELECT DISTINCT k.season, k.speaker, AVG(episode_percentage)::NUMERIC(10,2) AS season_average
 FROM (

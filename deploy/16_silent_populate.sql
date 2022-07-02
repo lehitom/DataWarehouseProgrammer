@@ -1,7 +1,12 @@
 -- Deploy hcp_interview:16_silent_populate to pg
+-- requires: 02_import_raw_data
+-- requires: 04_characters_populate
+-- requires: 15_silent
 
 BEGIN;
 
+--There are 186 episodes in provided script
+--Count actual occurences of lines and subtract for difference
 INSERT INTO the_office_silent(speaker, silent_episodes)
 SELECT speaker, 186-count(speaker) AS episodes 
 FROM(

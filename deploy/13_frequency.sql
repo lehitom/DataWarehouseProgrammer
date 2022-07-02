@@ -2,7 +2,7 @@
 
 BEGIN;
 
--- Creating frequency per word per character table.
+-- Creates frequency per word per character table.
 CREATE TABLE the_office_frequency (
 	id SERIAL NOT NULL,
 	speaker TEXT NOT NULL,

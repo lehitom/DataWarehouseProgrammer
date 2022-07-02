@@ -2,7 +2,7 @@
 
 BEGIN;
 
--- Creating season table.
+-- Creates season table.
 
 CREATE TABLE the_office_season (
 	id SERIAL NOT NULL,
@@ -17,7 +17,7 @@ COMMENT ON COLUMN the_office_season.id IS 'Unique identifier (surrogate key) of 
 COMMENT ON COLUMN the_office_season.season IS 'Seasons from the office';
 COMMENT ON COLUMN the_office_season.episodes IS 'Episode count per season from the office';
 
--- Creating joke count per season table.
+-- Creates that what she said count per season table.
 CREATE TABLE the_office_twss (
 	id SERIAL NOT NULL,
     season INTEGER NOT NULL,

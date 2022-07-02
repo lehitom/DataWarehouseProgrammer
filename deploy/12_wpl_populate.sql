@@ -1,8 +1,11 @@
 -- Deploy hcp_interview:12_wpl_populate to pg
+-- requires: 02_import_raw_data
+-- requires: 11_wpl
 
 BEGIN;
 
 --Regex removes any stage cues from the line_text to get better results
+--Measures based off of spaces
 INSERT INTO the_office_wpl(speaker, wpl)
 SELECT speaker, 
 (SUM(LENGTH(regexp_replace(line_text, '(\[).*?(\])', '', 'g'))

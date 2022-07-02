@@ -16,4 +16,5 @@ SELECT
     speaker,
     season_average
 FROM the_office_talktime LIMIT 1;
+
 ROLLBACK;
