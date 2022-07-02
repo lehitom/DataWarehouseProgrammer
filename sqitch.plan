@@ -3,3 +3,17 @@
 
 01_initial_schema 2022-01-20T21:31:40Z Debian <admin@ip-172-26-11-80> # Initial table schema for The Office show lines data source table.
 02_import_raw_data [01_initial_schema] 2022-01-20T21:49:46Z Debian <admin@ip-172-26-11-80> # Import raw data for the_office_dialog table.
+03_characters 2022-06-28T12:51:14Z Debian <admin@ip-172-26-13-45> # Task One, names of characters
+04_characters_populate 2022-06-28T13:09:27Z Debian <admin@ip-172-26-13-45> # Task One, names of characters, populate
+05_most_lines 2022-06-28T18:22:41Z Debian <admin@ip-172-26-13-45> # Creates table for which character has the most lines
+06_most_lines_populate 2022-06-29T09:48:55Z Debian <admin@ip-172-26-13-45> # Populates table for which character has the most lines
+07_twss 2022-06-29T18:39:14Z Debian <admin@ip-172-26-13-45> # Creates table for TWSS jokes
+08_twss_populate 2022-06-30T00:57:53Z Debian <admin@ip-172-26-13-45> # Populates table for TWSS jokes
+09_talktime 2022-06-30T23:14:46Z Debian <admin@ip-172-26-13-45> # Creates table for percentage of talktime
+10_talktime_populate 2022-06-30T23:29:17Z Debian <admin@ip-172-26-13-45> # Populate table for percentage of talktime
+11_wpl 2022-07-01T01:51:44Z Debian <admin@ip-172-26-13-45> # Create table for words per line average
+12_wpl_populate 2022-07-01T02:15:36Z Debian <admin@ip-172-26-13-45> # Populate table for words per line average
+13_frequency 2022-07-01T09:38:13Z Debian <admin@ip-172-26-13-45> # Create table for frequency of words per character
+14_frequency_populate 2022-07-01T09:46:18Z Debian <admin@ip-172-26-13-45> # Populate table for frequency of words per character
+15_silent 2022-07-01T21:14:40Z Debian <admin@ip-172-26-13-45> # Create table for 'silent' episodes per character
+16_silent_populate 2022-07-01T21:28:42Z Debian <admin@ip-172-26-13-45> # Populate table for 'silent' episodes per character
