@@ -5,7 +5,7 @@ BEGIN;
 /* Verify the table was successfully created */
 SELECT 
     id,
-    office_character,
+    speaker,
     word,
     word_count
 FROM the_office_frequency LIMIT 1;
