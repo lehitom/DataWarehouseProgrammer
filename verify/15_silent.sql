@@ -5,7 +5,7 @@ BEGIN;
 /* Verify the table was successfully created */
 SELECT 
     id,
-    office_character,
+    speaker,
     silent_episodes
 FROM the_office_silent LIMIT 1;
 
