@@ -26,6 +26,7 @@ SELECT * FROM the_office_wpl;
 - For each character, what is the most common word?
 SELECT * FROM the_office_frequency;
 - For each character, what is the number of episodes where the character does not have a line?
+SELECT * FROM the_office_silent;
 
 You are *not* required to complete all of these tasks -- if you have exhausted the time you wish to spend on this assessment please submit what you have. The goal is to get a reasonable representation of your work skills.
 
