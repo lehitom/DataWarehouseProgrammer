@@ -20,7 +20,9 @@ SELECT DISTINCT ON (season) season, speaker, lines FROM the_office_count;
 - For each season, what is the number of times a "That's what she said" joke comes up?
 SELECT * FROM the_office_twss ORDER BY season asc;
 - For each season, what is the average percent of lines each character contributed per episode?
+SELECT * FROM the_office_talktime;
 - For each character, what is the average number of words per line?
+SELECT * FROM the_office_wpl;
 - For each character, what is the most common word?
 - For each character, what is the number of episodes where the character does not have a line?
 
